@@ -42,7 +42,39 @@ function Home() {
         })}
        </section>
        <Product className="products"/>
-
+       <section id='reason'>
+            <div className="rea_sec"> 
+            <div className="title">
+                <h1>Reasons to shop with us</h1>
+            </div>
+            <ul>
+                <li>
+                    
+                    <i class="fa-solid fa-truck"></i>
+                    <div className="txt">
+                        <p>Free Shipping</p>
+                        <p>On in-stock items ordered</p>
+                    </div>
+                </li>
+                <li>
+                    
+                <i class="fa-solid fa-coins"></i>
+                    <div className="txt">
+                        <p>Accept Multi Currency</p>
+                        <p>Payment On Multi Currency</p>
+                    </div>
+                </li>
+                <li>
+                    
+                <i class="fa-solid fa-hand-holding-hand"></i>
+                    <div className="txt">
+                        <p>Customer Service</p>
+                        <p>Online 24/7 Support</p>
+                    </div>
+                </li>
+            </ul>
+            </div>
+       </section>
         </>
     )
 }
