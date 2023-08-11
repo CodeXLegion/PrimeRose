@@ -9,8 +9,8 @@ function NavBar(params) {
 
       <ul className="nav-links">
         <i className="uil uil-times navCloseBtn"></i>
-        <li><a>Home</a></li>
-        <li><Link to={'/product'}><a>Shop</a></Link></li>
+        <li><Link to={'/'}><a>Shop</a></Link></li>
+        <li><Link to={'/shop'}><a>Shop</a></Link></li>
         <li><a>About</a></li>
         <li><a>FAQ</a></li>
         <li><Link to={'/contact'}><a>Contact Us</a></Link></li>
