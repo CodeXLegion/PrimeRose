@@ -12,19 +12,6 @@ function Product() {
             <div className="plant_con">
             <div id="plants">
                 {Trends.map(trend =>{
-                    //   { let plants = document.querySelectorAll('.plant');
-    
-                    //   let opts = document.querySelectorAll('.opt');
-                    //   plants.forEach(plant =>{
-                    //       plant.addEventListener('mouseover',()=>{
-                    //           opts.forEach(opt =>{
-                    //               if (opt.style.display === 'none') {
-                    //                   opt.id = 'show'
-                    //                   console.log(plants,opts);
-                    //               }
-                    //           })
-                    //       })
-                    //   })}
                     return(
                         <div className="plant">
                             <div className="img">

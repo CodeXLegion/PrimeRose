@@ -1,6 +1,6 @@
 import '../nav_bar/nav.css'
 import { Link } from 'react-router-dom';
-function NavBar(params) {
+function NavBar() {
     return(
         <>
              <nav className="nav">
@@ -13,7 +13,7 @@ function NavBar(params) {
         <li><Link to={'/product'}><a>Shop</a></Link></li>
         <li><a>About</a></li>
         <li><a>FAQ</a></li>
-        <li><Link to={'/contact'}><a>Contact Us</a></Link></li>
+        <li className='contact'><Link to={'/contact'}><a>Contact Us</a></Link></li>
       </ul>
 
       <i className="uil uil-search search-icon" id="searchIcon"></i>
