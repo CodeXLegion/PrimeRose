@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main header{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+main header p{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+main header select{
+    padding: 12px 23px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background: transparent;
+    border: 2px solid rgba(211, 211, 211, 0.562);
+    font-size: 1rem;
+    font-weight: 550;
+    color: #224229da;
+    font-family: 'Poppins', sans-serif;
+}
+
+main header select option{
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: large;
+}
+
+main header select:hover , select:focus{
+    border: 2px solid rgba(0, 0, 0, 0.774);
+}
+
+main .content{  
+    display: flex;
+    overflow-x: hidden;
+    width: 80%;
+}
+
+main .sorters{
+    width: 38%;
+    /* background-color: red; */
+    padding-right: 60px ;
+    font-family: 'Poppins', sans-serif;
+}
+main .main{
+    width: 62%;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .content .sorters .accord{
+    width: 100%;
+    padding: 10px;
+    /* background-color: brown; */
+    border-top: 0.5px rgba(211, 211, 211, 0.562) solid;
+}
+
+main .sorters .accord:last-child{
+    padding-bottom: 13px;
+    border-bottom: 1px rgba(211, 211, 211, 0.562) solid;
+}
+
+.accord_panel,.accord_control{
+    padding: 4px;
+}
+
+main .sorters .accord_control{
+    font-size: 1.1rem;
+    font-weight: 650;
+    color: rgba(0, 0, 0, 0.603);
+    padding: 8px 5px;
+    cursor: pointer;
+}
+main .sorters .accord_panel{
+    transition: 0.2s ease-in-out;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+main .sorters .accord_panel li{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #224229;
+    /* color: rgba(0, 0, 0, 0.534); */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .sorters .accord_panel li span{
+    width: 20px;
+    height: 20px;
+    border: 1px rgba(211, 211, 211, 0.562) solid;
+    border-radius: 5px;
+}
+
+main .sorters button{
+    padding: 15px 55px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background: #f6cfb2;
+    border: 2px solid rgba(211, 211, 211, 0.562);
+    border-radius: 200px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #224229;
+}
+
+main .sorters button:hover{
+    border: 2px solid rgba(0, 0, 0, 0.856);
+}
+
+main .content .main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main .content .main .main_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+}  
+
+main .content .main .main_grid .plantinfo{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 320px;
+}
+
+main .content .main .main_grid .plantinfo .img{
+    width: 100%;
+    height: 400px;
+}
+
+main .content .main .main_grid .plantinfo .img img{
+    width: 100%;
+    height: 100%;
+}
+
+main .content .main .main_grid .plantinfo .plantinfo_text{
+    display: flex;
+    padding: 5px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 650;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+main .content .main .main_grid .plantinfo .plantinfo_text2{
+    display: flex;
+    padding: 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.play{
+    display: none;
+    padding: 10px 100px;
+    margin: 340px 0 0 10px;
+    background-color: whitesmoke;
+    border-radius: 100px;
+    position: absolute;
+    transition: transform 1s;
+    border: 2px solid rgba(211, 211, 211, 0.562);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #224229;
+}
+
+.plantinfo:hover .play{
+    display: flex;
+}
+
+.teamWrapper{
+    padding: 100px 5%;
+    padding-bottom: 0px;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.teamWrapper .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamWrapper .heading h2{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+.teamWrapper .heading h2 span{
+    color: #224229;
+}
+.teamWrapper .heading p{
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+}
+.teamCardWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    width: 100%;
+}
+.teamCard{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.teamCard .img{
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    object-fit: cover;
+}
+.teamCard .img img{
+    width: 100%;
+    height: 100%;
+}
+.teamCardContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* row-gap: 10px; */
+}
+
+.teamCardContent p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
