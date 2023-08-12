@@ -1,0 +1,81 @@
+
+#cart{
+    display: flex;
+    height: 87.6vh;
+    margin-top: -20px;
+    width: 100%;
+    margin-top: 83px;
+    /* background-color: red; */
+    justify-content: flex-end;
+}
+#cart .cart_sec{
+ width: 25%;
+ border-left: 2px solid black;
+ display: flex;
+ align-items: flex-start;
+ height: 100%;
+ flex-direction: column;
+ position: fixed;
+ background-color: white;
+}
+.cart_sec .cart_T{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 7%;
+    justify-content: space-between;
+    /* padding: 20px 30px; */
+    border-bottom: 2px solid black;
+}
+.cart_sec .cart_T .pad{
+    padding: 16px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+.cart_sec .cart_T .num{
+    border-right: none;
+    border-left: 2px solid black;
+}
+.cart_sec .cart_T .txt{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.cart_T p{
+    font-weight: 600;
+}
+.cart_sec .carts{
+ width: 100%;
+ display: flex;
+ height: 93%;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ border-bottom: 2px solid green;
+}
+.cart_sec .carts .cart_items{
+    display: none;
+    background-color: green;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.cart_sec .carts .cart_message{
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+.carts .cart_message button{
+    background-color: black;
+    padding: 20px 35px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 19px;
+}

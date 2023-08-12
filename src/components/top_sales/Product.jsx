@@ -1,10 +1,12 @@
 import '../top_sales/product.css'
 import { Trends } from '../Data/top_sales';
+import NavBar from '../nav_bar/Nav';
 // import { useState } from 'react';
 
 function Product() {
     return(
         <>
+        <NavBar/>
         <div id="products">
             <div className="title">
                 <h1>Trending Plants</h1>
