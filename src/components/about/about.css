@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 00px;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    gap: 24px;
+}
+.image-of-plant{
+    height: 500px;
+    width: 1099;
+    
+}
+
+.who{
+    
+    background: linear-gradient(to right, rgb(38, 255, 0), rgb(229, 255, 0), rgb(0, 136, 255), green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    font-family :"Space Grotesk", sans-serif;
+    width: 100%;
+    padding-left: 260px;
+    
+    font-weight: 700; 
+
+}
+.heropic{
+    height: 500px;
+    width: 1099;
+    border-radius: 7px;
+
+}
+.image-of-plant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about-us{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.welcome{
+    font-family : Mukta, sans-serif;
+    font-size: 20.6px;
+    text-align: start;
+    font-weight: 600;
+    color: #9ebb8e;
+    line-height: 1.5;
+    padding-left: 100px;
+    
+
+}
+.inspiration{
+    font-family : Mukta, sans-serif;
+    font-size: 18.6px;
+    text-align: start;
+    font-weight: 600;
+    color: #8fcf69;
+    line-height: 1.5;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 142px;
+  
+
+
+}
+.inspiration1{
+    font-family : Mukta, sans-serif;
+    font-size: 18.6px;
+    text-align: start;
+    font-weight: 600;
+    color: #8fcf69;
+    line-height: 1.5;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 20px;
+    
+     
+    
+
+}
+.inspiration2{
+    font-family : Mukta, sans-serif;
+    font-size: 18.6px;
+    text-align: start;
+    font-weight: 600;
+    color: #8fcf69;
+    line-height: 1.5;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 78px;
+
+   
+
+}
+.inspiration3{
+    font-family : Mukta, sans-serif;
+    font-size: 18.6px;
+    text-align: start;
+    font-weight: 600;
+    color: #8fcf69;
+    line-height: 1.5;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 480px;
+   
+
+
+}
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 20px;
+    }
+    .image-of-plant img {
+        max-width: 100%;
+        height: auto;
+    }
+    .who {
+        padding-left: 20px;
+    }
+    .welcome, .inspiration, .inspiration1, .inspiration2, .inspiration3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        display: flex;
+    }
+}
+@media (max-width: 1024px) {
+    .hero, .about-us {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .image-of-plant img {
+        max-width: 100%;
+        height: auto;
+    }
+    .who {
+        padding-left: 20px;
+    }
+    .welcome, .inspiration, .inspiration1, .inspiration2, .inspiration3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
+/* Media queries for iPhone responsiveness */
+@media (max-width: 375px) {
+    .hero, .about-us {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .image-of-plant img {
+        max-width: 100%;
+        height: auto;
+    }
+    .who {
+        padding-left: 10px;
+        font-size: 24px; /* Adjust font size for readability */
+    }
+    .welcome, .inspiration, .inspiration1, .inspiration2, .inspiration3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+}
+@media (max-width: 480px) {
+    .hero, .about-us {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .image-of-plant img {
+        max-width: 100%;
+        height: auto;
+    }
+    .who {
+        padding-left: 10px;
+        font-size: 24px; /* Adjust font size for readability */
+    }
+    .welcome, .inspiration, .inspiration1, .inspiration2, .inspiration3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
+@media (max-width: 1200px) {
+    .hero, .about-us {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .image-of-plant img {
+        max-width: 100%;
+        height: auto;
+    }
+    .who {
+        padding-left: 20px;
+        font-size: 28px; /* Adjust font size for readability */
+    }
+    .welcome, .inspiration, .inspiration1, .inspiration2, .inspiration3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        font-size: 18px; /* Adjust font size for readability */
+    }
+}
+@media (max-width: 1024px) {
+    .hero, .about-us {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .image-of-plant img {
+        max-width: 100%;
+        height: auto;
+    }
+    .who {
+        padding-left: 20px;
+        font-size: 28px; /* Adjust font size for readability */
+    }
+    .welcome, .inspiration, .inspiration1, .inspiration2, .inspiration3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        font-size: 18px; /* Adjust font size for readability */
+    }
+}

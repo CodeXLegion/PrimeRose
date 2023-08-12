@@ -6,7 +6,7 @@ import Product from './components/top_sales/Product';
 import Faq from './components/faq/Faq';
 import Cart from './components/cart/Cart';
 import Shop from './components/shop/Shop';
-import About from './components/planta/about'
+import About from './components/about/about'
 
 function App() {
   return (
