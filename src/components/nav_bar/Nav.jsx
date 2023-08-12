@@ -16,7 +16,7 @@ function NavBar() {
       <ul className="nav-links">
         <i className="uil uil-times navCloseBtn"></i>
         <li><Link to={'/'}><a>Home</a></Link></li>
-        <li><Link to={'/product'}><a>Shop</a></Link></li>
+        <li><Link to={'/shop'}><a>Shop</a></Link></li>
         <li><a>About</a></li>
         <li><Link to={'/faq'}><a>FAQ</a></Link></li>
         <li><Link to={'/contact'}><a>Contact Us</a></Link></li>
@@ -30,8 +30,7 @@ function NavBar() {
       </div>
      </form>
       <div className="button">
-        <button className="signin-button"><Link onClick={()=> setopensign(true)}>Sign In</Link></button>
-        <button className="sign-button">Join</button>
+      <Link ><button className="signin-button" onClick={()=> setopensign(true)}><i class="fa-solid fa-user"></i></button></Link>
        <Link to={'/cart'}> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></Link>
       </div>
         </nav>

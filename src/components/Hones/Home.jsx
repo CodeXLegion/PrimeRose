@@ -4,14 +4,11 @@ import '../Hones/collect.css';
 import { collection } from './data/collect';
 import Product from '../top_sales/Product';
 import NavBar from '../nav_bar/Nav';
-import Sign from '../signUp/Sign';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 function Home() {
-    // const [opensignup, setopensign] = useState(false)
     return(
         <>
-        {/* <Sign /> */}
+        
         <NavBar/>
        <div id="hero">
         <div className="hero_sec">
@@ -35,7 +32,7 @@ function Home() {
                     <div className="col_txt">
                         <p>{collect.title}</p>
                         <h1>{collect.head}</h1>
-                        <button>{collect.btn}</button>
+                       <Link to={'/shop'}><button>{collect.btn}</button></Link> 
                     </div>
                     <div className="col_img">
                     <img src={collect.img} alt="" />

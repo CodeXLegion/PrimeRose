@@ -1,8 +1,10 @@
 import '../cart/cart.css';
 import { Link } from 'react-router-dom';
+import NavBar from '../nav_bar/Nav';
 function Cart() {
     return(
         <>
+        <NavBar/>
         <div id="cart">
             <div className="cart_sec">
                 <div className="cart_T">

@@ -1,18 +1,21 @@
 
 #cart{
     display: flex;
-    height: 95vh;
+    height: 87.6vh;
     margin-top: -20px;
     width: 100%;
-    background-color: red;
+    margin-top: 83px;
+    /* background-color: red; */
     justify-content: flex-end;
 }
 #cart .cart_sec{
  width: 25%;
+ border-left: 2px solid black;
  display: flex;
  align-items: flex-start;
  height: 100%;
  flex-direction: column;
+ position: fixed;
  background-color: white;
 }
 .cart_sec .cart_T{
