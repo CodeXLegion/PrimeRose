@@ -14,4 +14,4 @@ export const collection = [
         head:'Vases',
         btn:'SHOP NOW'
     }
-]
+];

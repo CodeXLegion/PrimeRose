@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;800&display=swap');
+
+.Container-root{
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.header-text{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 900;
+    margin: 80px auto;
+    width: 80%;
+    font-size: 40px;
+}
+.colored-texts{
+    font-family: 'Space Grotesk', sans-serif;
+    background: #228BE6 , #217C7E;
+    color: #228BE6;
+    font-size: 40px;
+}
+.faq_images_container img{
+    border-radius: 5px;
+    height: 100%;
+   width: 100%;
+  
+}
+ 
+.faq_faq_container{
+    margin: 50px 0;
+}
+.mantine-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+     padding: 20px;
+}
+.mantine-root{
+    margin: 80px auto;
+    width: 80%;
+}
+.faq_faq_header{
+    display: flex;
+    align-items: flex-end;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.faq_contact_text{
+    color: gray;
+    font-weight: 500;
+    font-size: 17.6px;
+    /* margin: 80px auto;
+    width: 80%; */
+}
+.faq_contact_link{
+    color: gray;
+    font-weight: 500;
+    font-size: 17.6px;
+    margin: 80px auto;
+    width: 80%;
+}
+
+.faq_accordio_item{
+    border-bottom: none;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.faq_Accordio_label{
+    font-weight: 700;
+    color: #000;
+    font-size: 17.6px;
+    text-align: left;
+    font-family: 'Mukta', sans-serif;
+    
+}
+@media (max-width: 768px) {
+    .faq_images_container img{
+        border-radius: 5px;
+       
+
+ 
+    }
+    .faq_container {
+        grid-template-columns: 1fr;
+    }
+}

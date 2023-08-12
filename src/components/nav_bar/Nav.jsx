@@ -1,32 +1,46 @@
 import '../nav_bar/nav.css'
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// import Home from '../Hones/Home';
+import Product from './components/top_sales/Product';
+import Sign from '../signUp/Sign';
 function NavBar() {
+  const [opensignup, setopensign] = useState(false)
     return(
         <>
              <nav className="nav">
-      <i className="uil uil-bars navOpenBtn"></i>
+            <div className="logo">
+            <i className="uil uil-bars navOpenBtn"></i>
       <a className="logo">GREENWARE</a>
+            </div>
 
       <ul className="nav-links">
         <i className="uil uil-times navCloseBtn"></i>
-        <li><Link to={'/'}><a>Shop</a></Link></li>
+       <li><Link to={'/'}><a>Home</a></Link></li>
         <li><Link to={'/shop'}><a>Shop</a></Link></li>
+        <li><Link to={'/product'}><a>Product</a></Link></li>
         <li><a>About</a></li>
-        <li><a>FAQ</a></li>
-        <li className='contact'><Link to={'/contact'}><a>Contact Us</a></Link></li>
+        <li><Link to={'/faq'}><a>FAQ</a></Link></li>
+        <li><Link to={'/contact'}><a>Contact Us</a></Link></li>
       </ul>
 
-      <i className="uil uil-search search-icon" id="searchIcon"></i>
+        
+
+     <form action="">
+     <i className="uil uil-search search-icon" id="searchIcon"></i>
       <div className="search-box">
         <i className="uil uil-search search-icon"></i>
         <input type="text" placeholder="Search here..." />
       </div>
+     </form>
       <div className="button">
-        <button className="signin-button">Sign In</button>
-        <button className="sign-button">Join</button>
+      <Link ><button className="signin-button" onClick={()=> setopensign(true)}><i class="fa-solid fa-user"></i></button></Link>
+       <Link to={'/cart'}> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></Link>
       </div>
         </nav>
+        <Sign open={opensignup} onclosesign={()=> setopensign(false)}/>
         </>
+        
     )
 }
 
