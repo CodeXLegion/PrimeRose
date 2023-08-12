@@ -2,6 +2,7 @@ import '../nav_bar/nav.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import Home from '../Hones/Home';
+import Product from './components/top_sales/Product';
 import Sign from '../signUp/Sign';
 function NavBar() {
   const [opensignup, setopensign] = useState(false)
@@ -15,12 +16,15 @@ function NavBar() {
 
       <ul className="nav-links">
         <i className="uil uil-times navCloseBtn"></i>
-        <li><Link to={'/'}><a>Home</a></Link></li>
+       <li><Link to={'/'}><a>Home</a></Link></li>
         <li><Link to={'/shop'}><a>Shop</a></Link></li>
+        <li><Link to={'/product'}><a>Product</a></Link></li>
         <li><a>About</a></li>
         <li><Link to={'/faq'}><a>FAQ</a></Link></li>
         <li><Link to={'/contact'}><a>Contact Us</a></Link></li>
       </ul>
+
+        
 
      <form action="">
      <i className="uil uil-search search-icon" id="searchIcon"></i>
