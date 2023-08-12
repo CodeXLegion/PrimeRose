@@ -1,16 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #dcedc83d;
+    padding:0px 0px 80px 0px;
+    overflow-x: hidden;
 }
+
+main .resbutton{
+    margin-top: 100px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 550;
+    color: #224229da;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    display: none;
+}
+
 
 main header{
     margin-top: 100px;
     margin-bottom: 20px;
-    background-color: white;
+    /* background-color: white; */
     width: 80%;
     display: flex;
     align-items: center;
@@ -19,15 +40,17 @@ main header{
 }
 
 main header p{
-    font-family: 'Poppins', sans-serif;
-    color: rgba(0, 0, 0, 0.726);
-    font-size: 2rem;
-    font-weight: 650;
+    font-family: 'Unna', serif;
+    /* font-family: 'Poppins', sans-serif; */
+    color: #224229be;
+    /* color: #518432; */
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 main header select{
     padding: 12px 23px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 40px;
     background: transparent;
     border: 2px solid rgba(211, 211, 211, 0.562);
@@ -55,20 +78,20 @@ main .content{
 }
 
 main .sorters{
-    width: 38%;
-    /* background-color: red; */
-    padding-right: 60px ;
+    min-width: 25%;
+    width: 25%;
+    padding-right: 30px ;
     font-family: 'Poppins', sans-serif;
 }
 main .main{
-    width: 62%;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    /* background-color: darkblue; */
 }
 
 main .content .sorters .accord{
     width: 100%;
     padding: 10px;
-    /* background-color: brown; */
     border-top: 0.5px rgba(211, 211, 211, 0.562) solid;
 }
 
@@ -82,9 +105,11 @@ main .sorters .accord:last-child{
 }
 
 main .sorters .accord_control{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 650;
-    color: rgba(0, 0, 0, 0.603);
+    font-family: 'Unna', serif;
+    /* color: rgba(0, 0, 0, 0.603); */
+    color: #224229c4;
     padding: 8px 5px;
     cursor: pointer;
 }
@@ -96,56 +121,57 @@ main .sorters .accord_panel{
     gap: 4px;
 }
 main .sorters .accord_panel li{
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1.19rem;
+    font-weight: 450;
     color: #224229;
-    /* color: rgba(0, 0, 0, 0.534); */
+    font-family: 'Unna', serif;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-main .sorters .accord_panel li span{
+main .sorters .accord_panel li input[type="checkbox"]{
     width: 20px;
     height: 20px;
     border: 1px rgba(211, 211, 211, 0.562) solid;
     border-radius: 5px;
+    cursor: pointer;
 }
+
+main .sorters .accord_panel li input[type="checkbox"]:checked{
+    background-color: #224229;
+}
+
 
 main .sorters button{
     padding: 15px 55px;
     margin-top: 20px;
-    margin-left: 40px;
-    background: #f6cfb2;
+    margin-left: 38px;
+    background: #224229ad;
     border: 2px solid rgba(211, 211, 211, 0.562);
     border-radius: 200px;
     font-size: 0.9rem;
-    font-weight: 500;
-    color: #224229;
+    font-weight: 550;
+    color: whitesmoke;
 }
 
 main .sorters button:hover{
     border: 2px solid rgba(0, 0, 0, 0.856);
 }
 
-main .content .main{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 main .content .main .main_grid{
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
+    grid-gap: 23px;
+    /* background-color: aqua; */
 }  
 
 main .content .main .main_grid .plantinfo{
     display: flex;
     flex-direction: column;
     min-width: 300px;
-    width: 320px;
+    width: 340px;
 }
 
 main .content .main .main_grid .plantinfo .img{
@@ -160,36 +186,38 @@ main .content .main .main_grid .plantinfo .img img{
 
 main .content .main .main_grid .plantinfo .plantinfo_text{
     display: flex;
-    padding: 5px 0px;
+    padding: 8px 5px 3px 0px;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
-    font-weight: 650;
-    color: rgba(0, 0, 0, 0.493);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Unna', serif;
+    color: #224229da;
 }
 
 main .content .main .main_grid .plantinfo .plantinfo_text2{
     display: flex;
-    padding: 0px 0px;
+    padding: 0px 5px;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.95rem;
-    font-weight: 550;
-    color: rgba(0, 0, 0, 0.493);
+    font-size: 0.9rem;
+    font-weight: 450;
+    font-family: 'Unna', serif;
+    color: #224229a4;
 }
 
 .play{
     display: none;
-    padding: 10px 100px;
-    margin: 340px 0 0 10px;
-    background-color: whitesmoke;
+    padding: 10px 80px;
+    margin: 340px 0 0 2.1%;
+    background: #224229d3;
     border-radius: 100px;
     position: absolute;
     transition: transform 1s;
     border: 2px solid rgba(211, 211, 211, 0.562);
     font-size: 0.9rem;
     font-weight: 500;
-    color: #224229;
+    color: white;
 }
 
 .plantinfo:hover .play{
@@ -204,6 +232,7 @@ main .content .main .main_grid .plantinfo .plantinfo_text2{
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 .teamWrapper .heading{
     display: flex;
@@ -231,6 +260,7 @@ main .content .main .main_grid .plantinfo .plantinfo_text2{
     flex-wrap: wrap;
     row-gap: 30px;
     width: 100%;
+    overflow-x: hidden;
 }
 .teamCard{
     display: flex;
@@ -242,6 +272,7 @@ main .content .main .main_grid .plantinfo .plantinfo_text2{
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    overflow-x: hidden;
 }
 .teamCard .img{
     height: 200px;
@@ -270,4 +301,173 @@ main .content .main .main_grid .plantinfo .plantinfo_text2{
 }
 
 
+@media screen and (max-width: 1746px) {
+    main .content{  
+        width: 90%;
+    }
+    main header{
+        width: 90%;
+    }
+    main .content .sorters{
+        padding-right: 0px ;
+    }    
+}
+@media (max-width: 1200px) {
+    main header p {
+        font-size: 2rem;
+    }
+    main header{
+        width: 84%;
+    }
 
+    main header select {
+        font-size: 0.9rem;
+    }
+    main .content .main .main_grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 70px;
+    } 
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 350px;
+    }
+    main .sorters button{
+        padding: 15px 40px;
+        margin-left: 0px;
+        margin-top: 20px;
+        background: #224229ad;
+        border: 2px solid rgba(211, 211, 211, 0.562);
+        border-radius: 200px;
+        font-size: 0.9rem;
+        font-weight: 550;
+        color: whitesmoke;
+    }
+}
+
+@media screen and (max-width:1143px) {
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 330px;
+    }
+}
+
+@media screen and (max-width:1082px) {
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 315px;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    main .resbutton{
+        display: block;
+    }
+    main header{
+        display: none;
+    }
+    main .sorters{
+        display: none;
+    }
+    main .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 350px;
+    }
+    .teamCardWrapper{
+        flex-direction: column;
+    }
+
+    main .sorters {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    main .main {
+        width: 100%;
+    }
+
+    main .content .sorters {
+        padding: 0;
+    }
+
+    main .sorters button {
+        margin-left: 0;
+    }
+
+    main .content .main .main_grid {
+        padding-left: 60px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width:869px) {
+    main .content .main .main_grid{
+        grid-gap: 22px;
+    }  
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 320px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    main header select {
+        margin-left: 0;
+    }
+
+    main .sorters {
+        margin-bottom: 10px;
+    }
+
+    main .sorters button {
+        padding: 12px 40px;
+    }
+
+    main .content .main .main_grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    main .content .main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:869px) {
+    main .content .main .main_grid{
+        grid-gap: 22px;
+    }  
+    main .content .main .main_grid .plantinfo{
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        width: 260px;
+    }
+}
