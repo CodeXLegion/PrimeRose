@@ -64,7 +64,7 @@ function Faq() {
                                 <img src="" alt=""/>
                             </div> 
                              <div class="mantine-pildck faq_Accordio_label ">
-                            <a href="">Payments</a>
+                            <a href="https://www.google.com">Payments</a>
                 
                                 <div>
                                     <a href="">When will I be charged for my Plant next order?</a>

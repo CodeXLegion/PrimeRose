@@ -1,14 +1,17 @@
 
 import '../Hones/home.css';
 import '../Hones/collect.css';
-import img from './images/hero1.webp'
 import { collection } from './data/collect';
 import Product from '../top_sales/Product';
 import NavBar from '../nav_bar/Nav';
+import Sign from '../signUp/Sign';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 function Home() {
+    // const [opensignup, setopensign] = useState(false)
     return(
         <>
+        {/* <Sign /> */}
         <NavBar/>
        <div id="hero">
         <div className="hero_sec">
@@ -21,7 +24,7 @@ function Home() {
                 </div>
             </div>
             <div className="hero_img">
-                {/* <img src={img} alt="" /> */}
+                
             </div>
        </div>
        </div>

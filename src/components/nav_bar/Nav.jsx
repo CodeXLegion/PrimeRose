@@ -1,6 +1,10 @@
 import '../nav_bar/nav.css'
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+// import Home from '../Hones/Home';
+import Sign from '../signUp/Sign';
 function NavBar() {
+  const [opensignup, setopensign] = useState(false)
     return(
         <>
              <nav className="nav">
@@ -26,11 +30,14 @@ function NavBar() {
       </div>
      </form>
       <div className="button">
-        <button className="signin-button"><Link to={'/signup'}>Sign In</Link></button>
+        <button className="signin-button"><Link onClick={()=> setopensign(true)}>Sign In</Link></button>
         <button className="sign-button">Join</button>
+       <Link to={'/cart'}> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></Link>
       </div>
         </nav>
+        <Sign open={opensignup} onclosesign={()=> setopensign(false)}/>
         </>
+        
     )
 }
 
